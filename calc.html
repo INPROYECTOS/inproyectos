@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="with=device-with, initial-scale=1.0">
+	<title>INPRO Satelite</title>
+	<link rel="stylesheet" href="estilo.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Domine:wght@600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js" integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<body>
+	<section class="sub-header">
+		<nav>
+			<a href="indice.html"><img src="imagenes/INPROr.png"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html">Inicio<a/></li>
+					<li><a href="biblio.html">Biblioteca Virtual<a/></li>
+					<li><a href="calc.html">Cálculos<a/></li>
+					<li><a href="pics.html">Fotos<a/></li>
+					<li><a href="inprocess.html">INPROCESS<a/></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+	</section>
+	<div class="preloader">
+	<div id="contenedor">
+	<div class="contenedor-loader">
+	   	<div class="loader1"></div>
+		<div class="loader2"></div>
+		<div class="loader3"></div>
+		<div class="loader4"></div>
+ 	</div>
+	<div class="cargando">Cargando...</div>  
+	</div>
+	</div>
+	<section class="tablacalc">
+		<h1>Cálculos Eléctricos</h1>
+		<h2>Instrucciones:</h2>
+		<p>Las secciones "Convertidor", "Mac" y "Conductores" se vinculan para realizar cálculos.<br>La sección "Morores" es independiente a las demás.</p>
+		<div id="myExcelDiv" style="width: 1200px; height: 900px; position: center"></div>
+			<!-- * This code uses the Microsoft Office Excel Javascript object model to programmatically insert the
+				 * Excel Web App into a div with id=myExcelDiv. The full API is documented at
+				 * https://msdn.microsoft.com/es-MX/library/hh315812.aspx. There you can find out how to programmatically get
+				 * values from your Excel file and how to use the rest of the object model. -->
+			<script class="tablaxls" type="text/javascript" src="https://onedrive.live.com/embed?resid=35BF8BEC521FB610%21169&authkey=%21AFyxpQv7-7G2dRg&em=3&wdItem=%22CALCULADORAWEB%22&wdDivId=%22myExcelDiv%22&wdAllowInteractivity=1&wdAllowTyping=1"></script>
+		</div>
+	</section>
+	<section class="back">
+		<a href="index.html" class="back-btn">Volver</a>
+	</section>
+	<!------JavaScript para mostrar Menú lateral en celular------>
+	<script>
+		var navLinks = document.getElementById("navLinks");
+		function showMenu(){
+			navLinks.style.right = "0";
+		}
+		function hideMenu(){
+			navLinks.style.right = "-220px";
+		}
+	</script>
+	<script>
+		$(window).on("load",function(){
+			$(".preloader").fadeOut(1000);
+			$(".tablacalc").fadeIn(1000);
+		});
+	</script>
+</body>	
+</html>

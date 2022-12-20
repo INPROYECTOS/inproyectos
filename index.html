@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="with=device-with, initial-scale=1.0">
+	<title>INPRO Satelite</title>
+	<link rel="stylesheet" href="estilo.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Domine:wght@600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+	<section class="header">
+		<nav>
+			<a href="indice.html"><img src="imagenes/INPROr.png"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html">Inicio<a/></li>
+					<li><a href="biblio.html">Biblioteca Virtual<a/></li>
+					<li><a href="calc.html">Cálculos<a/></li>
+					<li><a href="pics.html">Fotos<a/></li>
+					<li><a href="inprocess.html">INPROCESS<a/></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+		<div class="text-box">
+			<h1>INPRO Satélite</h1>
+			<p>Ingeniería Productiva de Naucalpan S.A. de C.V.<br>Bienvenido</p>
+			<a href="construccion.html" class="hero-btn">Ingresar</a>
+		</div>
+	</section>
+
+	<!------JavaScript para mostrar Menú lateral en celular------>
+	<script>
+		var navLinks = document.getElementById("navLinks");
+		function showMenu(){
+			navLinks.style.right = "0";
+		}
+		function hideMenu(){
+			navLinks.style.right = "-220px";
+		}
+	</script>
+</body>
+</html>

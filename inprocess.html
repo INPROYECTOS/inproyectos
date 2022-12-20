@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="with=device-with, initial-scale=1.0">
+	<title>INPRO Satelite</title>
+	<link rel="stylesheet" href="estilo.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Domine:wght@600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+	<section class="sub-header">
+		<nav>
+			<a href="indice.html"><img src="imagenes/INPROr.png"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html">Inicio<a/></li>
+					<li><a href="biblio.html">Biblioteca Virtual<a/></li>
+					<li><a href="calc.html">Cálculos<a/></li>
+					<li><a href="pics.html">Fotos<a/></li>
+					<li><a href="inprocess.html">INPROCESS<a/></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+	</section>
+	<section class="inprocess">
+		<h1>Estamos en construcción</h1>
+		<h2>INPROCESS</h2>
+		<div id="contenedor">
+		  	<div class="contenedor-loader">
+		   	<div class="loader1"></div>
+			<div class="loader2"></div>
+		   	<div class="loader3"></div>
+		   	<div class="loader4"></div>
+ 		</div>
+	 	<div class="cargando">Cargando...</div>  
+		</div>
+	</section>
+	<section class="back">
+		<a href="index.html" class="back-btn">Volver</a>
+	</section>
+	<!------JavaScript para mostrar Menú lateral en celular------>
+	<script>
+		var navLinks = document.getElementById("navLinks");
+		function showMenu(){
+			navLinks.style.right = "0";
+		}
+		function hideMenu(){
+			navLinks.style.right = "-220px";
+		}
+	</script>
+</body>
+</html>

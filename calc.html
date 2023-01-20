@@ -38,7 +38,7 @@
 	<section class="tablacalc">
 		<h1>Cálculos Eléctricos</h1>
 		<h2>Instrucciones:</h2>
-		<p>Las secciones "Convertidor", "Mac" y "Conductores" se vinculan para realizar cálculos.<br>La sección "Morores" es independiente a las demás.</p>
+		<p>Las secciones "Convertidor", "Mac" y "Conductores" se vinculan para realizar cálculos.<br>La sección "Motores" es independiente a las demás.</p>
 		<div id="myExcelDiv" style="width: 1200px; height: 900px; position: center"></div>
 			<!-- * This code uses the Microsoft Office Excel Javascript object model to programmatically insert the
 				 * Excel Web App into a div with id=myExcelDiv. The full API is documented at
@@ -50,13 +50,16 @@
 	<section class="back">
 		<a href="index.html" class="back-btn">Volver</a>
 	</section>
+	
 	<!------JavaScript para mostrar Menú lateral en celular------>
 	<script>
 		var navLinks = document.getElementById("navLinks");
 		function showMenu(){
+			$("#navLinks").fadeIn(500);
 			navLinks.style.right = "0";
 		}
 		function hideMenu(){
+			$("#navLinks").fadeOut(500);
 			navLinks.style.right = "-220px";
 		}
 	</script>

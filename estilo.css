@@ -235,18 +235,37 @@ nav .fa{
 	font-weight: 600px;
 	color: #ffffff;
 }
+.txtbiblio{
+	display: flex;
+	justify-content: center;
+}
 .txtbiblio a{
 	color: #ffffff;
 	font-size: 16px;
 	font-weight: 300px;
 	line-height: 2px;
-	padding: 50px;
-	display: flex;
+	padding-top: 50px;
+	padding-right: 100px;
 }
 #norm,#cat{
     height: 600px;
     width: 300px;
-    background: green; 
+    background: #ff0000; 
+	margin: auto;
+	text-align: center;
+	padding-top: 20px;
+	color: #ffffff;
+}
+#norm,#cat p{
+    color: #ffffff;
+}
+#norm,#cat a{
+    color: #ffffff;
+}
+
+.mr{
+	margin-right: auto;
+	justify-content: center;
 }
 
 /*-------Cálculos eléctricos-------*/
